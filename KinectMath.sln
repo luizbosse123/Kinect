@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{D0CCF0B4-6BA1-467D-A1C0-396764C43B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectMath.Core", "source\app\KinectMath.Core\KinectMath.Core.csproj", "{C339C3A3-BFCB-445D-9F40-88DDE731C7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectMath.Testes", "source\testes\KinectMath.Testes\KinectMath.Testes.csproj", "{FBED6596-9D99-45DA-B4BE-9341EDAB8ACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jogo", "source\app\Jogo\Jogo.csproj", "{B96AE590-0803-483F-B943-13609F87DE5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Kinect.Toolkit", "source\app\Microsoft.Kinect.Toolkit\Microsoft.Kinect.Toolkit.csproj", "{C6F9C31B-6130-4443-A5CC-EF0664552ECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Kinect.Toolkit.Controls", "source\app\Microsoft.Kinect.Toolkit.Controls\Microsoft.Kinect.Toolkit.Controls.csproj", "{4508C4D1-85BB-4F3F-9E3B-CC93D231C65D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kinect.Toolkit", "Kinect.Toolkit", "{CF56B184-4089-401B-931B-C8D58FCBADE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C339C3A3-BFCB-445D-9F40-88DDE731C7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C339C3A3-BFCB-445D-9F40-88DDE731C7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C339C3A3-BFCB-445D-9F40-88DDE731C7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C339C3A3-BFCB-445D-9F40-88DDE731C7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBED6596-9D99-45DA-B4BE-9341EDAB8ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBED6596-9D99-45DA-B4BE-9341EDAB8ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBED6596-9D99-45DA-B4BE-9341EDAB8ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBED6596-9D99-45DA-B4BE-9341EDAB8ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96AE590-0803-483F-B943-13609F87DE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96AE590-0803-483F-B943-13609F87DE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96AE590-0803-483F-B943-13609F87DE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96AE590-0803-483F-B943-13609F87DE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F9C31B-6130-4443-A5CC-EF0664552ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F9C31B-6130-4443-A5CC-EF0664552ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F9C31B-6130-4443-A5CC-EF0664552ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F9C31B-6130-4443-A5CC-EF0664552ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4508C4D1-85BB-4F3F-9E3B-CC93D231C65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4508C4D1-85BB-4F3F-9E3B-CC93D231C65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4508C4D1-85BB-4F3F-9E3B-CC93D231C65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4508C4D1-85BB-4F3F-9E3B-CC93D231C65D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBED6596-9D99-45DA-B4BE-9341EDAB8ACD} = {D0CCF0B4-6BA1-467D-A1C0-396764C43B19}
+		{C6F9C31B-6130-4443-A5CC-EF0664552ECD} = {CF56B184-4089-401B-931B-C8D58FCBADE9}
+		{4508C4D1-85BB-4F3F-9E3B-CC93D231C65D} = {CF56B184-4089-401B-931B-C8D58FCBADE9}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Jogo.Views.ViewSelecionarDificuldade"
+			 x:Name="viewSelecionarDificuldade"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:k="http://schemas.microsoft.com/kinect/2013"
+             mc:Ignorable="d">
+	<DockPanel>
+		<StackPanel DockPanel.Dock="Top" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,5">
+			<Label Content="Selecione a Dificuldade" Foreground="Black" FontSize="36"  />
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<k:KinectTileButton 
+				x:Name="btnFacil" 
+				Label="Fácil" 
+				Margin="5,0" 
+				Command="{Binding SelecionaDificuldadeCommand}"
+				CommandParameter="{Binding ElementName=viewSelecionarDificuldade, Path=Facil}" />
+			<k:KinectTileButton 
+				x:Name="btnMedio" 
+				Label="Médio" 
+				Margin="5,0" 
+				Command="{Binding SelecionaDificuldadeCommand}"
+				CommandParameter="{Binding ElementName=viewSelecionarDificuldade, Path=Media}" />
+			<k:KinectTileButton 
+				x:Name="btnDificil" 
+				Label="Difícil" 
+				Margin="5,0" 
+				Command="{Binding SelecionaDificuldadeCommand}"
+				CommandParameter="{Binding ElementName=viewSelecionarDificuldade, Path=Dificil}" />
+		</StackPanel>
+	</DockPanel>
+</UserControl>

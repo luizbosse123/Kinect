@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/*
+Iconr
+
+#Visual Studio
+bin/
+obj/
+*.suo
+
+#Nuget
+packages/
+
+#Aplicacao
+Exemplos/
+.Debug/
+*.tmp

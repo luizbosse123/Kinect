@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Jogo.Views.ViewProximaEquacao"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:k="http://schemas.microsoft.com/kinect/2013"
+             mc:Ignorable="d" >
+	<Grid>
+		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="{Binding MensagemEtapaCompletada}" Style="{StaticResource LabelInstrucao}" Margin="20" />
+			<Label Content="Muito bem! Vamos para a próxima Equação" Style="{StaticResource LabelInstrucao}" Margin="20" />
+			<k:KinectTileButton
+				Label="Próximo"
+                Command="{Binding ProximaEquacaoCommand}" />
+		</StackPanel>
+	</Grid>
+</UserControl>

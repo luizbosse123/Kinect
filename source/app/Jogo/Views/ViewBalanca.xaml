@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="Jogo.Views.ViewBalanca"
+			 x:Name="viewBalanca"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:k="http://schemas.microsoft.com/kinect/2013"
+			 xmlns:views="clr-namespace:Jogo.Views"
+			 xmlns:controles="clr-namespace:Jogo.Controles"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="1200">
+    <UserControl.Resources>
+        <BitmapImage x:Key="ImagemTriangulo" UriSource="../Resources/Images/triangulo.png" />
+    </UserControl.Resources>
+
+    <Grid Background="White">
+        <Canvas x:Name="CanvasBalanca">
+            <controles:DragDropElement Panel.ZIndex="10" Canvas.Left="10" Canvas.Top="10" XInicial="10" YInicial="120">
+                <views:TrianguloArrastavel x:Name="TrianguloParaArrastar" Height="129" Width="152"/>
+
+            </controles:DragDropElement>
+            <controles:DragDropElement Panel.ZIndex="100" Canvas.Left="10" Canvas.Top="150" XInicial="10" YInicial="120">
+                <views:CirculoArrastavel x:Name="CirculoParaArrastar"/>
+            </controles:DragDropElement> 
+
+            <DockPanel VerticalAlignment="Stretch" 
+						HorizontalAlignment="Stretch" 
+						Canvas.Top="0" 
+						Canvas.Left="0"
+						Width="{Binding ActualWidth, ElementName=CanvasBalanca}"
+						Height="{Binding ActualHeight, ElementName=CanvasBalanca}"
+						Panel.ZIndex="0">
+                <Border BorderBrush="LightGray" BorderThickness="3" DockPanel.Dock="Left" Width="200" />
+                <Border VerticalAlignment="Center" 
+						HorizontalAlignment="Center"
+						BorderBrush="Transparent"
+						BorderThickness="2"
+						RenderTransformOrigin="0.5,0.5"
+						Style="{StaticResource PenderBalanca}">
+                    <DockPanel Width="800" Height="300" LastChildFill="False">
+                  <!--  <views:ComponenteBalanca DockPanel.Dock="Bottom" Height="50" RenderTransformOrigin="0.5,0.5" >
+                           <views:ComponenteBalanca.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform AngleX="-3.768"/>
+                                    <RotateTransform/>
+                                    <TranslateTransform X="-1.646"/>
+                                </TransformGroup>
+                            </views:ComponenteBalanca.RenderTransform>
+                        </views:ComponenteBalanca>-->
+                        <WrapPanel Name="AreaDropEsquerda" DockPanel.Dock="Left" Width="650" Margin="60,10,5,0" Background="{Binding BackgroundArrastandoElemento}" RenderTransformOrigin="0.498,0.479" />
+                       <!-- <WrapPanel Name="AreaDropDireita" DockPanel.Dock="Right" Width="385" Margin="5,10,10,0" Background="{Binding BackgroundArrastandoElemento}" /> -->
+                    </DockPanel>
+                    <Border.LayoutTransform>
+                        <RotateTransform Angle="0" />
+                    </Border.LayoutTransform>
+                </Border>
+            </DockPanel>
+        </Canvas>
+    </Grid>
+</UserControl>
